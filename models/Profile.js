@@ -25,7 +25,7 @@ const ProfileSchema = new Schema({
     type: String,
     required: true
   },
-  skills: { 
+  skills: {
     type: [String],
     required: true
   },
@@ -38,7 +38,7 @@ const ProfileSchema = new Schema({
   experience: [
     {
       title: {
-        String,
+        type: String,
         required: true
       },
       company: {
@@ -53,10 +53,10 @@ const ProfileSchema = new Schema({
         required: true
       },
       to: {
-        type: Date,
+        type: Date
       },
       current: {
-        type: String,
+        type: Boolean,
         default: false
       },
       description: {
@@ -83,10 +83,10 @@ const ProfileSchema = new Schema({
         required: true
       },
       to: {
-        type: Date,
+        type: Date
       },
       current: {
-        type: String,
+        type: Boolean,
         default: false
       },
       description: {
@@ -109,11 +109,12 @@ const ProfileSchema = new Schema({
     },
     instagram: {
       type: String
-    },
+    }
   },
   date: {
     type: Date,
     default: Date.now
   }
 });
+
 module.exports = Profile = mongoose.model('profile', ProfileSchema);
