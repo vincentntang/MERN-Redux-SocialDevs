@@ -3,6 +3,9 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const passport = require('passport');
 
+// Load Validation
+const validateProfileInput = require('../../validation/profile');
+
 // Load Profile Model
 const Profile = require('../../models/Profile');
 // Load User Profile
@@ -34,6 +37,14 @@ router.get('/', passport.authenticate('jwt', {session: false}), (req, res) => {
 // @access  Private  (protected)
 router.post('/', passport.authenticate('jwt', {session: false}), 
 (req, res) => {
+    const { errors, isValid } = validateProfileInput(req.body);
+
+    // Check Validation
+    if(!isValid){
+      // Return any errors with 400 status
+      return res.status(400).json(errors);
+    }
+
     // Get fields
     const profileFields = {};
     profileFields.user = req.user.id;
@@ -57,6 +68,7 @@ router.post('/', passport.authenticate('jwt', {session: false}),
     if(req.body.linkedin) profileFields.social.linkedin = req.body.linkedin;
     if(req.body.instagram) profileFields.social.instagram = req.body.instagram;
 
+    // Update Profile
     Profile.findOne({ user: req.user.id})
       .then(profile => {
         if(profile){
@@ -67,7 +79,7 @@ router.post('/', passport.authenticate('jwt', {session: false}),
             { new: true}
           ).then(profile => res.json(profile));
         } else {
-          // Create
+          // Create a new profile
 
           // Check if handle exists
           Profile.findOne({ handle: profileFields.handle }).then(profile => {
