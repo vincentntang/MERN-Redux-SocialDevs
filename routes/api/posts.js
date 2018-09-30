@@ -35,7 +35,7 @@ router.post(
       avatar: req.body.avatar,
       user: req.user.id
     });
-
+    // newPost.save();
     newPost.save().then(post => res.json(post));
   }
 );
