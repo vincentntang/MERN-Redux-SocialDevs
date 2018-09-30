@@ -28,11 +28,12 @@ router.post(
       // If any errors, send 400 with errors object
       return res.status(400).json(errors);
     }
+    console.log("req.user", req.user);
 
     const newPost = new Post({
       text: req.body.text,
       name: req.body.name,
-      avatar: req.body.avatar,
+      avatar: req.user.avatar,
       user: req.user.id
     });
     // newPost.save();
