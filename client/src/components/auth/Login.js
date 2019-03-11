@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import classnames from 'classnames';
-import { loginUser } from '../../actions/authActions';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import classnames from "classnames";
+import { loginUser } from "../../actions/authActions";
 
 class Login extends Component {
   constructor() {
     super();
     this.state = {
-      email: '',
-      password: '',
+      email: "",
+      password: "",
       errors: {}
     };
 
@@ -19,13 +19,13 @@ class Login extends Component {
 
   componentDidMount() {
     if (this.props.auth.isAuthenticated) {
-      this.props.history.push('/dashboard');
+      this.props.history.push("/dashboard");
     }
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
-      this.props.history.push('/dashboard');
+      this.props.history.push("/dashboard");
     }
 
     if (nextProps.errors) {
@@ -41,7 +41,7 @@ class Login extends Component {
       password: this.state.password
     };
 
-    this.props.loginUser(userData);
+    this.props.loginUser(userData); // when user clicks submit form login
   }
 
   onChange(e) {
@@ -64,8 +64,8 @@ class Login extends Component {
                 <div className="form-group">
                   <input
                     type="email"
-                    className={classnames('form-control form-control-lg', {
-                      'is-invalid': errors.email
+                    className={classnames("form-control form-control-lg", {
+                      "is-invalid": errors.email
                     })}
                     placeholder="Email Address"
                     name="email"
@@ -79,8 +79,8 @@ class Login extends Component {
                 <div className="form-group">
                   <input
                     type="password"
-                    className={classnames('form-control form-control-lg', {
-                      'is-invalid': errors.password
+                    className={classnames("form-control form-control-lg", {
+                      "is-invalid": errors.password
                     })}
                     placeholder="Password"
                     name="password"
@@ -112,4 +112,7 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(mapStateToProps, { loginUser })(Login);
+export default connect(
+  mapStateToProps,
+  { loginUser }
+)(Login);
