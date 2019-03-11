@@ -2,3 +2,9 @@ Course notes from https://www.udemy.com/mern-stack-front-to-back/learn/v4/t/lect
 
 - Windows OS development
 - VScode
+
+How to install?
+
+Known issues
+
+- CORS request on backend was hard routed
