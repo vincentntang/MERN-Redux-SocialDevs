@@ -155,7 +155,7 @@ class CreateProfile extends React.Component {
                 />
                 <SelectListGroup
                   placeholder="Status"
-                  name="handle"
+                  name="status"
                   value={this.state.status}
                   onChange={this.onChange}
                   options={options}
