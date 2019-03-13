@@ -1,21 +1,21 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getCurrentProfile } from "../../actions/profileActions";
 import Spinner from "../common/Spinner";
 
-class Dashboard extends React.Component {
+class Dashboard extends Component {
   componentDidMount() {
     this.props.getCurrentProfile();
   }
+
   render() {
     const { user } = this.props.auth;
     const { profile, loading } = this.props.profile;
 
     let dashboardContent;
 
-    // Loading spinner if not yet loaded
     if (profile === null || loading) {
       dashboardContent = <Spinner />;
     } else {
@@ -41,7 +41,8 @@ class Dashboard extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="display-4">{dashboardContent}</div>
+              <h1 className="display-4">Dashboard</h1>
+              {dashboardContent}
             </div>
           </div>
         </div>
