@@ -30,7 +30,7 @@ class CreateProfile extends React.Component {
     };
 
     this.onChange = this.onChange.bind(this);
-    this.onChange = this.onSubmit.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
