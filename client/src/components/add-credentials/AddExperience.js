@@ -22,7 +22,7 @@ class AddExperience extends Component {
     };
 
     this.onChange = this.onChange.bind(this);
-    this.onChange = this.onSubmit.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
     this.onCheck = this.onCheck.bind(this);
   }
   componentWillReceiveProps(nextProps) {
