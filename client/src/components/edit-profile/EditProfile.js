@@ -68,7 +68,10 @@ class CreateProfile extends React.Component {
       profile.facebook = !isEmpty(profile.social.facebook)
         ? profile.social.facebook
         : "";
-      profile.linkedin = !isEmpty(profile.social.youtube)
+      profile.linkedin = !isEmpty(profile.social.linkedin)
+        ? profile.social.linkedin
+        : "";
+      profile.youtube = !isEmpty(profile.social.youtube)
         ? profile.social.youtube
         : "";
       profile.instagram = !isEmpty(profile.social.instagram)
@@ -88,7 +91,8 @@ class CreateProfile extends React.Component {
         twitter: profile.twitter,
         facebook: profile.facebook,
         linkedin: profile.linkedin,
-        youtube: profile.youtube
+        youtube: profile.youtube,
+        instagram: profile.instagram
       });
     }
   }
