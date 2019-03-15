@@ -1,4 +1,12 @@
-Course notes from https://www.udemy.com/mern-stack-front-to-back/learn/v4/t/lecture/10055136?start=0
+MERN (Mongo Express React NodeJS) app demo for freelancers and clients
+
+Features includes
+
+- PrivateRoutes
+- JWT Authentication
+- CRUD operations
+
+based on MERN stack course from traversymedia
 
 ## Installation
 
@@ -12,4 +20,17 @@ Inside client folder, there is an `.env.sample`. Convert this to `.env` and add 
 
 ## Known issues
 
-- CORS request on backend was hard routed
+- CORS issue, backend was set to localhost instead of variable
+
+## Additional Feature List
+
+- [ ] - Swagger API Docs
+- [ ] - Jest Unit Testing
+- [ ] - Storybook
+- [ ] - TravisCI
+- [ ] - Docker Support
+
+Upwork like functionality
+
+- [ ] - Clients
+- [ ] - Job Posts
