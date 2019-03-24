@@ -8,7 +8,11 @@ Features includes
 - JWT Authentication
 - CRUD operations
 
-based on MERN stack course from traversymedia
+## Documentation
+
+- [Integrations](/docs/OVERVIEW.md)
+- [API](/docs/INTEGRATIONS.md)
+- [User Stories](/docs/Users.md)
 
 ## Installation
 
