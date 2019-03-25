@@ -1,5 +1,7 @@
 # React Redux Dev Connector
 
+To test your files locally, you can download the Postman sample starter here
+
 ## Running API tests locally
 
 To locally run the provided Postman collection against your backend, execute:
@@ -12,30 +14,81 @@ APIURL=http://localhost:5000/api/
 
 `Authorization: Token jwt.token.here`
 
+## JSON Objects returned by API:
+
+Make sure the right content type like `Content-Type: application/json; charset=utf-8` is correctly returned.
+
+Password encrypted via JWT, avatar if username match pulled from gravatar
+
+_Data is pulled from MongoDB instance, and scrubbed of auto-generated values_
+
 ### Users (for authentication)
 
 ```JSON
 {
-  "user": {
-    "email": "jake@jake.jake",
-    "token": "jwt.token.here",
-    "username": "jake",
-    "bio": "I work at statefarm",
-    "image": null
+  "name": "John Doe",
+  "email": "john@gmail.com",
+  "avatar": "//www.gravatar.com/avatar/1f9d9a9efc2f523b2f09629444632b5c?s=200&r=pg&d=mm",
+  "password": "$2a$10$XSo4C.IwDHNaqq9chHieMOjHej5FMf09kDKSLMSWNEIViKR6wlLWK",
+  "date": {
+      "$date": "2018-10-08T03:54:15.645Z"
   }
 }
 ```
 
-### /Client
+### All Posts
 
 ```JSON
 {
-  "profile": {
-    "username": "jake",
-    "bio": "I work at statefarm",
-    "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
-    "following": false
-  }
+  "social": {
+      "twitter": "http://twitter.com/vincentntang",
+      "instagram": "http://instagram.com/vincentntang"
+  },
+  "skills": [
+      "HTML",
+      " CSS",
+      " Javascript"
+  ],
+  "handle": "vincentntang",
+  "company": "My Company Name Here",
+  "website": "vincentntang.com",
+  "location": "Florida",
+  "bio": "I have been programming for a few years now",
+  "status": "Developer",
+  "githubusername": "vincentntang",
+  "experience": [
+      {
+
+          "title": "Project Management",
+          "company": "FW Equip",
+          "location": "Florida",
+          "from": {
+              "$date": "2019-03-07T00:00:00.000Z"
+          },
+          "to": {
+              "$date": "2019-03-21T00:00:00.000Z"
+          },
+          "description": "Manage ecommerce and construction"
+      }
+  ],
+    "education": [
+        {
+            "current": false,
+            "school": "University Of Florida",
+            "degree": "BS",
+            "fieldofstudy": "MSE",
+            "from": {
+                "$date": "2009-05-07T00:00:00.000Z"
+            },
+            "to": {
+                "$date": "2013-05-09T00:00:00.000Z"
+            },
+            "description": "Research Materials Metals"
+        }
+    ],
+    "date": {
+        "$date": "2019-03-14T14:04:24.428Z"
+    },
 }
 ```
 
