@@ -1,6 +1,6 @@
 MERN (Mongo Express React NodeJS) app demo for freelancers and clients. It's a forum where you can sign up, and see what other developers are posting.Basically, like dev.to
 
-https://cryptic-stream-24001.herokuapp.com/
+socialdevs.herokuapp.com
 
 Features includes
 
