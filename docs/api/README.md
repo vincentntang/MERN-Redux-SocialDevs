@@ -24,9 +24,9 @@ _Data is pulled from MongoDB instance, and scrubbed of auto-generated values_
 
 See the associated folders for responses
 
-- [post](/post.md)
-- [user](/user.md)
-- [profile](/profile.md)
+- [post](post.md)
+- [user](user.md)
+- [profile](profile.md)
 
 ## JSON Data stored on MongoDB instance
 
