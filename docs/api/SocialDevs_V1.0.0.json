@@ -1,0 +1,1616 @@
+{
+	"info": {
+		"_postman_id": "8088839c-8073-4297-8502-1187da3e4abd",
+		"name": "MERN-DevC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Get Post Test Endpoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{APIURL}}/test",
+							"host": [
+								"{{APIURL}}"
+							],
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Posts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViYWQ5NTNlOGYzZTg1MzE5MDc1Y2E4ZCIsIm5hbWUiOiJKb2huIERvZSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvMWY5ZDlhOWVmYzJmNTIzYjJmMDk2Mjk0NDQ2MzJiNWM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTM4MTg3NjI4LCJleHAiOjE1MzgxOTEyMjh9.IdyPyTsTIyVKwzc8Z4cxsB_pN7YC5rsBezxqEw8ql7o",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{APIURL}}/posts",
+							"host": [
+								"{{APIURL}}"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth-Users",
+			"item": [
+				{
+					"name": "Get User Test Endpoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Current User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register a User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Brad Traversy",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "techguyinfo@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "john doe",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "John Doe",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "john@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "password2",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/users/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "279",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Sep 2018 02:43:10 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"117-UKc/3hUDLJroYs9/iquzAWX5UXk\"",
+									"name": "ETag",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express",
+									"name": "X-Powered-By",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"body": "{\"_id\":\"5bad953e8f3e85319075ca8d\",\"name\":\"John Doe\",\"email\":\"john@gmail.com\",\"avatar\":\"//www.gravatar.com/avatar/1f9d9a9efc2f523b2f09629444632b5c?s=200&r=pg&d=mm\",\"password\":\"$2a$10$LCHx97voRk9LsRckoEc5p.ju7mJnr6fiKdt1vN406.q5XHKE3/xAK\",\"date\":\"2018-09-28T02:43:10.080Z\",\"__v\":0}"
+						},
+						{
+							"name": "Brad Traversy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Brad Traversy",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "techguyinfo@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/users/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Login User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "55a87863-6546-4465-89aa-e50502fee678",
+								"exec": [
+									"var data = pm.response.json();\r",
+									"pm.environment.set(\"token\", data.token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jack@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "test12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{APIURL}}/users/login",
+							"host": [
+								"{{APIURL}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "johndoe",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "john@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "343",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Sep 2018 02:44:27 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"157-EtWEigY78aipZd+ePOeqdTelqug\"",
+									"name": "ETag",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express",
+									"name": "X-Powered-By",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"body": "{\"success\":true,\"token\":\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViYWQ5NTNlOGYzZTg1MzE5MDc1Y2E4ZCIsIm5hbWUiOiJKb2huIERvZSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvMWY5ZDlhOWVmYzJmNTIzYjJmMDk2Mjk0NDQ2MzJiNWM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTM4MTAyNjY3LCJleHAiOjE1MzgxMDYyNjd9.Oi_kqIi3nfRz6crKu7pbljxb3Pq4zI8BD3BMNWy9Mro\"}"
+						},
+						{
+							"name": "brad traversy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "techguyinfo@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/users/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "350",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 26 Sep 2018 03:04:22 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15e-jnyzKYLB+X7x6uZpEn1dY8zK4YI\"",
+									"name": "ETag",
+									"description": "An identifier for a specific version of a resource, often a message digest"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express",
+									"name": "X-Powered-By",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"body": "{\"success\":true,\"token\":\"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViYTMxYjY0OGNiM2FhMjVjODc2YWNlYiIsIm5hbWUiOiJCcmFkIFRyYXZlcnN5IiwiYXZhdGFyIjoiLy93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci9kYjNkZmQxODE1ODAzNDc1NjhkYjYyYjA1NGIzZjVjNj9zPTIwMCZyPXBnJmQ9bW0iLCJpYXQiOjE1Mzc5MzEwNjIsImV4cCI6MTUzNzkzNDY2Mn0.cPSoOIh-n-aC0kKoT97CHzeJnTaa7-wT3EgrBFlpf54\"}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Profiles",
+			"item": [
+				{
+					"name": "Get Profile Test Endpoint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "{{APIURL}}/profile",
+							"host": [
+								"{{APIURL}}"
+							],
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "brad traversy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViYTMxYjY0OGNiM2FhMjVjODc2YWNlYiIsIm5hbWUiOiJCcmFkIFRyYXZlcnN5IiwiYXZhdGFyIjoiLy93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci9kYjNkZmQxODE1ODAzNDc1NjhkYjYyYjA1NGIzZjVjNj9zPTIwMCZyPXBnJmQ9bW0iLCJpYXQiOjE1Mzc5MzEwNjIsImV4cCI6MTUzNzkzNDY2Mn0.cPSoOIh-n-aC0kKoT97CHzeJnTaa7-wT3EgrBFlpf54",
+										"disabled": false
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "handle",
+											"value": "johndoe",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Developer",
+											"type": "text"
+										},
+										{
+											"key": "skills",
+											"value": "HTML,CSS,JavaScript,PHP",
+											"type": "text"
+										},
+										{
+											"key": "company",
+											"value": "Edusoft",
+											"type": "text"
+										},
+										{
+											"key": "website",
+											"value": "http://www.edusoft.com",
+											"type": "text"
+										},
+										{
+											"key": "twitter",
+											"value": "http://twitter.com/johndoe",
+											"type": "text"
+										},
+										{
+											"key": "facebook",
+											"value": "http://facebook.com/johndoe",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Sep 2018 02:45:59 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express",
+									"name": "X-Powered-By",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"body": "Unauthorized"
+						},
+						{
+							"name": "johndoe2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViYWQ5NTNlOGYzZTg1MzE5MDc1Y2E4ZCIsIm5hbWUiOiJKb2huIERvZSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvMWY5ZDlhOWVmYzJmNTIzYjJmMDk2Mjk0NDQ2MzJiNWM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTM4MTAyNjY3LCJleHAiOjE1MzgxMDYyNjd9.Oi_kqIi3nfRz6crKu7pbljxb3Pq4zI8BD3BMNWy9Mro"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "handle",
+											"value": "johndoe2",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Developer",
+											"type": "text"
+										},
+										{
+											"key": "skills",
+											"value": "HTML,CSS,JavaScript,PHP",
+											"type": "text"
+										},
+										{
+											"key": "company",
+											"value": "Edusoft",
+											"type": "text"
+										},
+										{
+											"key": "website",
+											"value": "http://www.edusoft.com",
+											"type": "text"
+										},
+										{
+											"key": "twitter",
+											"value": "http://twitter.com/johndoe",
+											"type": "text"
+										},
+										{
+											"key": "facebook",
+											"value": "http://facebook.com/johndoe",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/profile/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										""
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Sep 2018 02:48:48 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express",
+									"name": "X-Powered-By",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"body": "Unauthorized"
+						}
+					]
+				},
+				{
+					"name": "Get All Profiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Profile",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViYTMxYjY0OGNiM2FhMjVjODc2YWNlYiIsIm5hbWUiOiJCcmFkIFRyYXZlcnN5IiwiYXZhdGFyIjoiLy93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci9kYjNkZmQxODE1ODAzNDc1NjhkYjYyYjA1NGIzZjVjNj9zPTIwMCZyPXBnJmQ9bW0iLCJpYXQiOjE1Mzc4NDc5NzEsImV4cCI6MTUzNzg1MTU3MX0.yHWt4SwpiectHu184Cy-WvCVlYe0i3B_kmO92nonLDc"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:5000/api/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "brad traversy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViYTMxYjY0OGNiM2FhMjVjODc2YWNlYiIsIm5hbWUiOiJCcmFkIFRyYXZlcnN5IiwiYXZhdGFyIjoiLy93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci9kYjNkZmQxODE1ODAzNDc1NjhkYjYyYjA1NGIzZjVjNj9zPTIwMCZyPXBnJmQ9bW0iLCJpYXQiOjE1Mzc5MzEwNjIsImV4cCI6MTUzNzkzNDY2Mn0.cPSoOIh-n-aC0kKoT97CHzeJnTaa7-wT3EgrBFlpf54",
+										"disabled": false
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "handle",
+											"value": "johndoe",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Developer",
+											"type": "text"
+										},
+										{
+											"key": "skills",
+											"value": "HTML,CSS,JavaScript,PHP",
+											"type": "text"
+										},
+										{
+											"key": "company",
+											"value": "Edusoft",
+											"type": "text"
+										},
+										{
+											"key": "website",
+											"value": "http://www.edusoft.com",
+											"type": "text"
+										},
+										{
+											"key": "twitter",
+											"value": "http://twitter.com/johndoe",
+											"type": "text"
+										},
+										{
+											"key": "facebook",
+											"value": "http://facebook.com/johndoe",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Sep 2018 02:45:59 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express",
+									"name": "X-Powered-By",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"body": "Unauthorized"
+						},
+						{
+							"name": "johndoe2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViYWQ5NTNlOGYzZTg1MzE5MDc1Y2E4ZCIsIm5hbWUiOiJKb2huIERvZSIsImF2YXRhciI6Ii8vd3d3LmdyYXZhdGFyLmNvbS9hdmF0YXIvMWY5ZDlhOWVmYzJmNTIzYjJmMDk2Mjk0NDQ2MzJiNWM_cz0yMDAmcj1wZyZkPW1tIiwiaWF0IjoxNTM4MTAyNjY3LCJleHAiOjE1MzgxMDYyNjd9.Oi_kqIi3nfRz6crKu7pbljxb3Pq4zI8BD3BMNWy9Mro"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "handle",
+											"value": "johndoe2",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "Developer",
+											"type": "text"
+										},
+										{
+											"key": "skills",
+											"value": "HTML,CSS,JavaScript,PHP",
+											"type": "text"
+										},
+										{
+											"key": "company",
+											"value": "Edusoft",
+											"type": "text"
+										},
+										{
+											"key": "website",
+											"value": "http://www.edusoft.com",
+											"type": "text"
+										},
+										{
+											"key": "twitter",
+											"value": "http://twitter.com/johndoe",
+											"type": "text"
+										},
+										{
+											"key": "facebook",
+											"value": "http://facebook.com/johndoe",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/profile/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"profile",
+										""
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12",
+									"name": "Content-Length",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Sep 2018 02:48:48 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express",
+									"name": "X-Powered-By",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookie": [],
+							"body": "Unauthorized"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Profiles - Specific",
+			"item": [
+				{
+					"name": "Get Profile by Handle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Profile by User ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create or Edit User Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "handle",
+									"value": "jack",
+									"type": "text"
+								},
+								{
+									"key": "company\n",
+									"value": "jack's company",
+									"type": "text"
+								},
+								{
+									"key": "website",
+									"value": "http://google.com",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "his location",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "his bio",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "his status",
+									"type": "text"
+								},
+								{
+									"key": "githubusername",
+									"value": "jacksgithub",
+									"type": "text"
+								},
+								{
+									"key": "youtube",
+									"value": "http://youtube.com//jacksyoutube",
+									"type": "text"
+								},
+								{
+									"key": "twitter",
+									"value": "http://twitter.com/jackstwitter",
+									"type": "text"
+								},
+								{
+									"key": "facebook",
+									"value": "http://facebook.com/jacksfacebook",
+									"type": "text"
+								},
+								{
+									"key": "linkedin",
+									"value": "http://linkedin.com/jackslinkedin",
+									"type": "text"
+								},
+								{
+									"key": "instagram",
+									"value": "http://instagram.com/jacksinstagram",
+									"type": "text"
+								},
+								{
+									"key": "skills",
+									"value": "HTML, CSS, JS",
+									"type": "text"
+								},
+								{
+									"key": "websote",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{APIURL}}/profile",
+							"host": [
+								"{{APIURL}}"
+							],
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Jacks Website",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "handle",
+											"value": "jack",
+											"type": "text"
+										},
+										{
+											"key": "company\n",
+											"value": "jack's company",
+											"type": "text"
+										},
+										{
+											"key": "website",
+											"value": "http://google.com",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "his location",
+											"type": "text"
+										},
+										{
+											"key": "bio",
+											"value": "his bio",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "his status",
+											"type": "text"
+										},
+										{
+											"key": "githubusername",
+											"value": "jacksgithub",
+											"type": "text"
+										},
+										{
+											"key": "youtube",
+											"value": "http://youtube.com//jacksyoutube",
+											"type": "text"
+										},
+										{
+											"key": "twitter",
+											"value": "http://twitter.com/jackstwitter",
+											"type": "text"
+										},
+										{
+											"key": "facebook",
+											"value": "http://facebook.com/jacksfacebook",
+											"type": "text"
+										},
+										{
+											"key": "linkedin",
+											"value": "http://linkedin.com/jackslinkedin",
+											"type": "text"
+										},
+										{
+											"key": "instagram",
+											"value": "http://instagram.com/jacksinstagram",
+											"type": "text"
+										},
+										{
+											"key": "skills",
+											"value": "HTML, CSS, JS",
+											"type": "text"
+										},
+										{
+											"key": "websote",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{APIURL}}/profile",
+									"host": [
+										"{{APIURL}}"
+									],
+									"path": [
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "557"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"22d-iA0BdTM6l14jJcg2MX0bJ6GhPf0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Mar 2019 03:12:09 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"skills\": [\n        \"HTML\",\n        \" CSS\",\n        \" JS\"\n    ],\n    \"_id\": \"5c9998899d0bba00177e0a5d\",\n    \"user\": \"5c9965e0ff219f00176b0651\",\n    \"handle\": \"jack\",\n    \"website\": \"http://google.com\",\n    \"location\": \"his location\",\n    \"bio\": \"his bio\",\n    \"status\": \"his status\",\n    \"githubusername\": \"jacksgithub\",\n    \"social\": {\n        \"youtube\": \"http://youtube.com//jacksyoutube\",\n        \"twitter\": \"http://twitter.com/jackstwitter\",\n        \"facebook\": \"http://facebook.com/jacksfacebook\",\n        \"linkedin\": \"http://linkedin.com/jackslinkedin\",\n        \"instagram\": \"http://instagram.com/jacksinstagram\"\n    },\n    \"experience\": [],\n    \"education\": [],\n    \"date\": \"2019-03-26T03:12:09.179Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Experience To Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Brewer",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "Jack Daniels",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Tennesssee",
+									"type": "text"
+								},
+								{
+									"key": "from",
+									"value": "02/12/2015",
+									"type": "text"
+								},
+								{
+									"key": "to",
+									"value": "02/12/2019",
+									"type": "text"
+								},
+								{
+									"key": "current",
+									"value": "no",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "I make whiskey",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{APIURL}}/profile/experience",
+							"host": [
+								"{{APIURL}}"
+							],
+							"path": [
+								"profile",
+								"experience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Education to Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "school",
+									"value": "School of Bartending",
+									"type": "text"
+								},
+								{
+									"key": "degree",
+									"value": "Bartender Elite",
+									"type": "text"
+								},
+								{
+									"key": "fieldofstudy",
+									"value": "Bartending",
+									"type": "text"
+								},
+								{
+									"key": "from",
+									"value": "05/05/2015",
+									"type": "text"
+								},
+								{
+									"key": "to",
+									"value": "05/05/2018",
+									"type": "text"
+								},
+								{
+									"key": "current",
+									"value": "no",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is how I learned to make whiskey",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{APIURL}}/profile/education",
+							"host": [
+								"{{APIURL}}"
+							],
+							"path": [
+								"profile",
+								"education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Experience From Profile",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{APIURL}}/experience/:expid",
+							"host": [
+								"{{APIURL}}"
+							],
+							"path": [
+								"experience",
+								":expid"
+							],
+							"variable": [
+								{
+									"key": "expid",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Education from Profile",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{APIURL}}/experience/:expid",
+							"host": [
+								"{{APIURL}}"
+							],
+							"path": [
+								"experience",
+								":expid"
+							],
+							"variable": [
+								{
+									"key": "expid",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Profile",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{APIURL}}/profile",
+							"host": [
+								"{{APIURL}}"
+							],
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "bc4e1173-5683-405d-8630-98fe7b8ddcf5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "4cf53ff2-d33a-4ede-87a4-c339fa4436df",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "84c080d7-b70d-4340-9d1e-df7c9aa91219",
+			"key": "APIURL",
+			"value": "localhost:5000/api",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"id": "8c1b6927-9ce7-48b4-802e-2ce8cda8d90e",
+			"key": "APIURL",
+			"value": "socialdevs.herokuapp.com/api",
+			"type": "string"
+		},
+		{
+			"id": "1e0c7080-bc48-4a0c-bde2-ffaf38eeb4e6",
+			"key": "token",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}

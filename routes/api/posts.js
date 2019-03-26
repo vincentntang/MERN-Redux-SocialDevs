@@ -11,13 +11,14 @@ const Profile = require("../../models/Profile");
 // Validation
 const validatePostInput = require("../../validation/post");
 
+// "posts" comes from filename
 // @route   GET api/posts/test
 // @desc    Tests post route
 // @access  Public
 router.get("/test", (req, res) => res.json({ msg: "Posts Works" }));
 
-// @route   GET api/posts/test
-// @desc    Tests post route
+// @route   GET api/posts
+// @desc    Get posts
 // @access  Public
 router.get("/", (req, res) => {
   Post.find()

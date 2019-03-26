@@ -1,4 +1,4 @@
-MERN (Mongo Express React NodeJS) app demo for freelancers and clients
+MERN (Mongo Express React NodeJS) app demo for freelancers and clients. It's a forum where you can sign up, and see what other developers are posting.Basically, like dev.to
 
 https://cryptic-stream-24001.herokuapp.com/
 
@@ -8,7 +8,11 @@ Features includes
 - JWT Authentication
 - CRUD operations
 
-based on MERN stack course from traversymedia
+## Documentation
+
+- [Integrations](/docs/OVERVIEW.md)
+- [API](/docs/INTEGRATIONS.md)
+- [User Stories](/docs/Users.md)
 
 ## Installation
 
@@ -26,13 +30,13 @@ Inside client folder, there is an `.env.sample`. Convert this to `.env` and add 
 
 ## Additional Feature List
 
-- [ ] - Swagger API Docs
-- [ ] - Jest Unit Testing
-- [ ] - Storybook
-- [ ] - TravisCI
-- [ ] - Docker Support
+- [ ] Swagger API Docs
+- [ ] Jest Unit Testing
+- [ ] Storybook
+- [ ] TravisCI
+- [ ] Docker Support
 
 Upwork like functionality
 
-- [ ] - Clients
-- [ ] - Job Posts
+- [ ] Clients
+- [ ] Job Posts
