@@ -11,8 +11,7 @@ Features includes
 ## Documentation
 
 - [Integrations](/docs/OVERVIEW.md)
-- [API](/docs/INTEGRATIONS.md)
-- [User Stories](/docs/Users.md)
+- [API](/docs/api/README.md)
 
 ## Installation
 
