@@ -108,7 +108,7 @@ Posts
 
 ## QUICKSTART
 
-Import the [SocialDevs_V1.0.0.json](/SocialDevs_V1.0.0.json) file into postman to get up and running quickly
+Import the [SocialDevs_V1.0.0.json](SocialDevs_V1.0.0.json) file into postman to get up and running quickly
 
 ## TODOS
 
