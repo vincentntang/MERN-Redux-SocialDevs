@@ -49,6 +49,7 @@ if (localStorage.jwtToken) {
   }
 }
 
+// Private Routing Logic
 class App extends Component {
   render() {
     return (
