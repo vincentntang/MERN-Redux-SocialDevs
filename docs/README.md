@@ -1,1 +1,0 @@
-[Integrations](/docs/INTEGRATIONS.md)
