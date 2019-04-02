@@ -1,8 +1,9 @@
-MERN (Mongo Express React NodeJS) app demo for freelancers and clients. It's a forum where you can sign up, and see what other developers are posting.Basically, like dev.to
+MERN (Mongo Express React NodeJS) app demo for freelancers and clients with company profiles.
 
-See the wiki for API documentation
+## Links
 
-socialdevs.herokuapp.com
+- [Wiki](https://github.com/vincentntang/MERN-Redux-SocialDevs/wiki)
+- [LiveLink](socialdevs.herokuapp.com)
 
 Features includes
 
@@ -10,20 +11,34 @@ Features includes
 - JWT Authentication
 - CRUD operations
 
-## Documentation
-
-- [Integrations](/docs/OVERVIEW.md)
-- [API](/docs/api/README.md)
-
 ## Installation
 
 ```
+# Install dependencies for server
 npm install
-cd client
-npm install
+
+# Install dependencies for client
+npm run client-install
+
+# Run the client & server with concurrently
+npm run dev
+
+# Run the Express server only
+npm run server
+
+# Run the React client only
+npm run client
+
+# Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
 
-Inside client folder, there is an `.env.sample`. Convert this to `.env` and add your keys
+## Environmental folder
+
+There is a `.env.sample` folder. Add your 4 keys there.
+
+2 are for github auth (frontend)
+
+another 2 are for mongoDB (backend)
 
 ## Known issues
 
