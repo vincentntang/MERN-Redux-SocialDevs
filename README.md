@@ -40,9 +40,7 @@ There is a `.env.sample` folder. Add your 4 keys there.
 
 another 2 are for mongoDB (backend)
 
-## Known issues
-
-- CORS issue, backend was set to localhost instead of variable
+## Updating Heroku Instance
 
 ## Additional Feature List
 
