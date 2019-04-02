@@ -5,11 +5,7 @@ MERN (Mongo Express React NodeJS) app demo for freelancers and clients with comp
 - [Wiki](https://github.com/vincentntang/MERN-Redux-SocialDevs/wiki)
 - [LiveLink](socialdevs.herokuapp.com)
 
-Features includes
-
-- PrivateRoutes
-- JWT Authentication
-- CRUD operations
+For test purposes, you can use "test@gmail.com/test12345" as "username/password"
 
 ## Installation
 
@@ -51,6 +47,12 @@ git remote add heroku https://git.heroku.com/socialdevs.git
 # Stage latest commits (git add, git commit)
 git push heroku master
 ```
+
+## Current Features
+
+- PrivateRoutes
+- JWT Authentication
+- CRUD operations
 
 ## Additional Feature List
 

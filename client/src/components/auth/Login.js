@@ -15,6 +15,7 @@ class Login extends Component {
 
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.loadSample = this.loadSample.bind(this);
   }
 
   componentDidMount() {
@@ -48,6 +49,14 @@ class Login extends Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
+  loadSample(e) {
+    console.log(e);
+    this.setState({
+      email: "test@gmail.com",
+      password: "test12345"
+    });
+  }
+
   render() {
     const { errors } = this.state;
 
@@ -59,6 +68,9 @@ class Login extends Component {
               <h1 className="display-4 text-center">Log In</h1>
               <p className="lead text-center">
                 Sign in to your Social Devs account
+                <button onClick={this.loadSample} style={style}>
+                  Load Sample User
+                </button>
               </p>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
@@ -87,6 +99,11 @@ class Login extends Component {
     );
   }
 }
+
+const style = {
+  "margin-left": "5px",
+  transform: "scale(.8)"
+};
 
 Login.propTypes = {
   loginUser: PropTypes.func.isRequired,
