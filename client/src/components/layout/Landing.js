@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { PropTypes } from "prop-types";
 import { connect } from "react-redux";
+import Particles from "react-particles-js";
+import { whileStatement } from "babel-types";
 
 class Landing extends Component {
   componentDidMount() {
@@ -13,6 +15,7 @@ class Landing extends Component {
   render() {
     return (
       <div className="landing">
+        <Particles height={"100vh"} width={"100vw"} params={particleOpt} />
         <div className="dark-overlay landing-inner text-light">
           <div className="container">
             <div className="row">
@@ -38,6 +41,21 @@ class Landing extends Component {
     );
   }
 }
+
+// Define settings for particles
+const particleOpt = {
+  particles: {
+    number: {
+      value: 50
+    },
+    shape: {
+      stroke: {
+        width: 4,
+        color: "white"
+      }
+    }
+  }
+};
 
 Landing.propTypes = {
   auth: PropTypes.object.isRequired
