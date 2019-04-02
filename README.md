@@ -47,7 +47,9 @@ Install Heroku CLI
 ```
 npm i -g heroku
 heroku login
-heroku
+git remote add heroku https://git.heroku.com/socialdevs.git
+# Stage latest commits (git add, git commit)
+git push heroku master
 ```
 
 ## Additional Feature List
