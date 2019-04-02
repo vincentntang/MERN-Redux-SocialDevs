@@ -40,7 +40,15 @@ There is a `.env.sample` folder. Add your 4 keys there.
 
 another 2 are for mongoDB (backend)
 
-## Updating Heroku Instance
+## Pushing latest instance to Heroku
+
+Install Heroku CLI
+
+```
+npm i -g heroku
+heroku login
+heroku
+```
 
 ## Additional Feature List
 
